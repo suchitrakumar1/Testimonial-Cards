@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Testimonial Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        body{
+            background-color: beige;
+        }
+
+        .speech-bubble {
+            max-width: 300px;
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+            position: relative;
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        .speech-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -19px;
+            left: 31px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: #1c1c1c transparent transparent;
+        }
+
+        .all {
+            max-width: 720px;
+            min-height: 100vh;
+            background-color: white;
+            margin: 0px auto;
+            border: 1px solid black;
+        }
+
+        .first-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            width: 360px;
+            height: 300px;
+        }
+
+        .second-container {
+            width: 360px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* gap: 40px; */
+            border: 2px solid black;
+            height: 300px;
+            border-radius: 20px;
+
+        }
+
+        .ss {
+            border-radius: 50px;
+        }
+
+        .int {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            gap: 14px;
+        }
+
+        .section1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .int1 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            gap: 14px;
+            margin-top: 90px;
+        }
+
+        .artimus {
+            font-size: 15px;
+            position: relative;
+            top: 40px;
+        }
+
+        .imagewithdesc {
+            height: 240px;
+            width: 360px;
+            padding: 10px;
+            background-color: rgb(28, 25, 25);
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            flex-direction: column;
+        }
+
+        .ssd {
+            border-radius: 15px;
+        }
+
+        .sec2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .jm {
+            color: white;
+            position: relative;
+            bottom: 40px;
+            font-weight: 300;
+        }
+
+        .em {
+            font-size: small;
+            color: white;
+            font-weight: lighter;
+            position: relative;
+            bottom: 30px;
+        }
+
+        .ext {
+            font-size: small;
+            color: white;
+            font-weight: normal;
+            position: relative;
+            bottom: 10px;
+        }
+
+        .last {
+            width: 720px;
+            height: 320px;
+            border: 2px solid black;
+            border-radius: 30px;
+            background-color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            gap: 40px;
+        }
+
+        .lastpara {
+            font-size: 13px;
+            color: black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        .highfive {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row class="lastii";
+            gap: 20px;
+        }
+
+        .lastii {
+            border-radius: 200px;
+        }
+
+        .blur {
+            filter: blur(0.6px);
+            /* Adjust value as needed */
+        }
+
+        .lit {
+            font-size: x-large;
+            letter-spacing: 5px;
+            color: black;
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <sec class="section1">
+
+
+            <!-- First-container -->
+            <div class="first-container">
+                <div class="speech-bubble">
+                    I have been solving all the project ideas on roadmap.sh and I am surprised how far I have come from
+                    where I
+                    started.<br><br>
+                    <strong>Highly recommended!</strong>
+                </div>
+                <div class="int">
+                    <div class="face">
+                        <img src="9230137.jpg" alt="" width="50" class="ss">
+                    </div>
+                    <div class="informat">
+                        Liones Devis
+                        <br>
+                        Junior Frontend Developer
+                    </div>
+                </div>
+            </div>
+            <!-- Second Container -->
+            <div class="second-container">
+                <p class="artimus"> Since starting my career in 2021 <br> I have only followed one resource <br>
+                    roadmap.sh it truly
+                    helped
+                    me go <br> from 0 to having a job and changing <br> the financial trajectory of my family
+                </p>
+                <div class="int1">
+                    <div class="face1">
+                        <img src="10235275.jpg" alt="" width="50" class="ss">
+                    </div>
+                    <div class="informat1">
+                        Artem Jones
+                        <br>
+                        Senior Frontend Developer
+                    </div>
+                </div>
+
+            </div>
+        </sec>
+        <sec class="sec2">
+            <div class="immage1">
+                <img src="facefe.jpg" alt="" width="360" height="240px" class="ssd">
+            </div>
+            <div class="imagewithdesc">
+                <img src="star.png" alt="" class="star" width="120px">
+                <h2 class="jm">
+                    Jackie Mackle
+                </h2>
+                <p class="em">Engineering Manager</p>
+                <p class="ext">
+                    I find myself recommending roadmap.sh to all the internees or junior developers. It's a great way to
+                    skill up and grow in your career
+                </p>
+            </div>
+        </sec>
+
+        <sec class="section3">
+            <div class="last">
+                <p class="lastpara">
+                    roadmap.sh is an incredible resource. I was fortunate to discover it during my university days in
+                    2018. Back then, it was just a single repository with three images. It’s amazing to see how much
+                    impact it has had on millions of lives since then.
+                </p>
+                <div class="highfive">
+                    <img src="left.svg" alt="" class="arrows">
+                    <img src="facefe.jpg" alt="" width="60" class="lastii blur">
+                    <img src="facefe.jpg" alt="" width="80" class="lastii">
+                    <img src="facefe.jpg" alt="" width="60" class="lastii blur">
+                    <img src="right.svg" alt="" class="arrows">
+
+                </div>
+                <p class="lit">Optimus Prime</p>
+
+            </div>
+        </sec>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
